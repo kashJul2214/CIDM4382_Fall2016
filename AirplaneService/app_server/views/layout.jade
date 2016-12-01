@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+   .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') Airplane Speeds
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/climbingspeeds') Climbing Speeds
+            li
+              a(href='/flapsettings') Flap Settings
+            li
+              a(href='/landingspeeds') Landing Speeds
+              
+
+    .container
+      
+
+      footer
+        .row
+          .col-xs-12
+            small &copy; Airplane Speeds
+    
+    script(src='/javascripts/dist/jquery.min.js')
+    script(src='/bootstrap/js/boostrap.min.js')
